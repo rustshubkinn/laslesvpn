@@ -1,0 +1,109 @@
+header {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-block {
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.nav-block a {
+  font-weight: 400;
+}
+
+.logo-svg {
+  max-height: 37px;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.log-in li:first-child {
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #0b132a;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+
+.menu a {
+  color: #4f5665;
+}
+
+.btn {
+  color: #f53855;
+  border: 1px solid #f53855;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 13px 45px;
+}
+
+section.get-started {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 130px;
+}
+
+.get-started-text {
+  position: relative;
+  max-width: 555px;
+}
+
+.get-started-text h2 {
+  color: #0b132a;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.get-started-text h2 span {
+  font-weight: 700;
+}
+
+.get-started-text p {
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 80px;
+}
+
+.get-started-text p span {
+  font-weight: 600;
+}
+
+.get-started-text .red-btn {
+  color: #ffffff;
+  background-color: #f53838;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 18px 78px;
+}
+
+.get-started-image img {
+  position: absolute;
+  right: 8%;
+  top: 27%;
+}
