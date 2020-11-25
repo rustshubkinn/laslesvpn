@@ -1,0 +1,147 @@
+section.plans {
+    font-family: Rubik, sans-serif;
+    color: #4f5665;
+    font-size: 14px;
+    line-height: 30px;
+    background: linear-gradient(180deg, #f8f8f8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+    padding-top: 80px;
+    margin-top: 126px;
+}
+
+.plans-text h3 {
+    color: #0b132a;
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.plans-text p {
+    text-align: center;
+    color: #4f5665;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+.plans-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #dddddd;
+    padding: 70px 67px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.plan-item .item-text h3 {
+    color: #0b132a;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.plan-item .item-text ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-text ul li {
+    display: flex;
+    align-items: center;
+}
+
+.item-text ul li svg {
+    margin-right: 25px;
+}
+
+.item-price {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item-price h3 {
+    text-align: center;
+    color: #0b132a;
+    margin-bottom: 33px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.item-price h3 span {
+    color: #4f5665;
+    font-weight: 400;
+}
+
+.item-price .btn {
+    padding: 13px 63px;
+}
+
+@media (max-width: 1199px) {
+    .plans-list {
+        justify-content: space-around;
+    }
+
+    .plan-item {
+        padding: 40px 37px;
+    }
+}
+
+@media (max-width: 991px) {
+    .plans-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-item {
+        width: 80%;
+        padding: 20px 17px;
+    }
+
+    .plan-item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .item-text p {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    section.plans {
+        margin-top: 80px;
+    }
+
+    .plans-text h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 490px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
