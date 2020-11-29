@@ -1,0 +1,236 @@
+section.feedback {
+    font-family: Rubik, sans-serif;
+    color: #4f5665;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 125px;
+}
+
+.feedback h3 {
+    max-width: 448px;
+    margin: 0 auto;
+    color: #0b132a;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.container > p {
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feedback ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.feedback ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 340px;
+    border: 2px solid #dddddd;
+    padding: 28px;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.feedback ul li:hover {
+    border: 2px solid #f53838;
+}
+
+.feedback ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+li p {
+    margin: 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    margin-right: 20px;
+}
+
+.user-info div p:first-child {
+    color: #0b132a;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.user-info div p:last-child {
+    font-size: 14px;
+}
+
+.user-rate {
+    display: flex;
+    align-items: center;
+    line-height: 15px;
+}
+
+.user-rate p {
+    margin-right: 12px;
+}
+
+.user-text {
+    color: #0b132a;
+    max-width: 340px;
+    min-height: 100px;
+    margin-top: 8px;
+}
+
+.scroll-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.scroll-buttons span:first-child {
+    display: inline-block;
+    background: #f53838;
+    padding: 7.5px 22.5px;
+    border-radius: 30px;
+}
+
+.scroll-buttons span {
+    display: inline-block;
+    background: #dde0e4;
+    padding: 7.5px;
+    border-radius: 50%;
+}
+
+.scroll-buttons span:not(:last-child) {
+    margin-right: 15px;
+}
+
+.scroll-buttons span:hover {
+    background: #f53838;
+}
+
+.scroll-buttons span:focus {
+    background: #f53838;
+    padding: 7.5px 22.5px;
+    border-radius: 30px;
+}
+
+.scroll-arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scroll-arrows span {
+    display: flex;
+    border: 2px solid #f53838;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.scroll-arrows span:last-child {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-left: 20px;
+}
+
+.scroll-arrows span:hover {
+    background: #f53838;
+    box-shadow: 0 14px 44px rgba(14, 20, 34, 0.08);
+}
+
+.scroll-arrows span:hover svg path {
+    fill: #ffffff;
+}
+
+@media (max-width: 575px) {
+    .feedback {
+        padding: 0 20px;
+    }
+
+    .feedback ul {
+        flex-direction: column;
+    }
+
+    .feedback ul li {
+        width: 70%;
+    }
+
+    .feedback ul li:not(:last-child) {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .scroll-line {
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+
+    .scroll-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll-buttons span:first-child {
+        padding: 22.5px 7.5px;
+    }
+
+    .scroll-buttons span:not(:last-child) {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .scroll-arrows {
+        flex-direction: column;
+    }
+
+    .scroll-arrows span:first-child {
+        transform: rotate(90deg);
+        margin-bottom: 15px;
+    }
+
+    .scroll-arrows span:last-child {
+        margin: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+@media (max-width: 450px) {
+    .feedback ul li {
+        min-width: 0;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-info img {
+        margin-bottom: 15px;
+    }
+
+    .user-rate {
+        margin-bottom: 50px;
+    }
+
+    .scroll-buttons span:not(:last-child) {
+        margin-bottom: 7px;
+    }
+}

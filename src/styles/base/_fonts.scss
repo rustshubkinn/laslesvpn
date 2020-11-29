@@ -1,9 +1,12 @@
-@font-face {
-  font-family: "Rubik";
-  src: url(../../fonts/Rubik-Regular.woff);
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    // font-display: swap // Uncomment to initially display system fonts
+    src: local($fname), url($furl) format("woff2");
+  }
 }
 
-@font-face {
-  font-family: "Rubik";
-  src: url(../../fonts/Rubik-Medium.woff);
-}
+@include font("Rubik", Regular, 400, "../../fonts/Rubik-Regular.woff");
+@include font("Rubik", Medium, 500, "../../fonts/Rubik-Medium.woff");
