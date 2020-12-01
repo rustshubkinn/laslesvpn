@@ -14,9 +14,12 @@ section.plans {
     font-weight: 500;
     font-size: 35px;
     line-height: 50px;
+    margin-bottom: 20px;
 }
 
 .plans-text p {
+    max-width: 555px;
+    margin: 0 auto;
     text-align: center;
     color: #4f5665;
     font-size: 16px;
