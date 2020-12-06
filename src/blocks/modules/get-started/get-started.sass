@@ -1,0 +1,135 @@
+.container
+  .get-started
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 130px
+    .get-started-text
+      position: relative
+      max-width: 555px
+      h2
+        color: #0b132a
+        font-size: 50px
+        font-weight: 500
+        line-height: 70px
+        margin-bottom: 30px
+        span
+          font-weight: 700
+      p
+        min-width: 555px
+        margin-bottom: 80px
+        span
+          font-weight: 500
+      .red-btn
+        color: #ffffff
+        background-color: #f53838
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        font-size: 16px
+        font-weight: 400
+        line-height: 25px
+        padding: 18px 78px
+        &:hover
+          color: #f53838
+          background-color: #ffffff
+          border: 1px solid #f53855
+
+    .get-started-image
+      img
+        position: relative
+        left: 10%
+        top: 27%
+
+  .company-numbers
+    justify-content: space-around
+    margin-top: 105px
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    padding: 40px 90px
+    li
+      display: flex
+      align-items: center
+      padding: 27px 0
+      &:not(:last-child)
+        border-right: 2px solid #eeeff2
+        padding-right: 130px
+      div
+        display: flex
+        flex-direction: column
+        margin-left: 36px
+        p
+          margin: 0
+          &:first-child
+            color: #0b132a
+            font-size: 25px
+            line-height: 30px
+            font-weight: 700
+            margin-bottom: 10px
+          &:last-child
+            color: #4f5665
+            font-size: 20px
+            line-height: 30px
+            font-weight: 400
+
+@media ( max-width: 1200px )
+  .container
+    .company-numbers
+      padding: 30px 60px
+      li
+        &:not(:last-child)
+          padding-right: 70px
+
+@media ( max-width: 992px )
+  .container
+    .get-started
+      flex-direction: column
+      text-align: center
+      margin-top: 70px
+      &-image
+        img
+          left: 0%
+          top: 0%
+          margin-top: 50px
+
+    .company-numbers
+      padding: 20px 30px
+      li
+        &:not(:last-child)
+          padding-right: 50px
+        div
+          margin-left: 20px
+
+@media ( max-width: 768px )
+  .container
+    .get-started
+      margin-top: 70px
+
+    .company-numbers
+      flex-direction: column
+      padding: 20px 20px
+      li
+        margin: 20px 0
+        padding: 0
+        &:not(:last-child)
+          border-right: none
+          border-bottom: 2px solid #eeeff2
+          padding: 0
+          padding-bottom: 30px
+
+@media ( max-width: 576px )
+  .container
+    .get-started
+      padding: 0 20px
+      .get-started-text
+        h2
+          font-size: 35px
+        p
+          font-size: 14px
+          min-width: auto
+
+      .get-started-image
+        img
+          max-width: 90%
+
+    .company-numbers
+      margin: 30px

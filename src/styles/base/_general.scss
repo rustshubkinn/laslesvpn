@@ -9,10 +9,31 @@ ul {
   padding: 0;
 }
 
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
 .container {
   @include container();
   @include sm(max-width, rem(510));
   @include md(max-width, rem(690));
   @include lg(max-width, rem(930));
   @include xl(max-width, rem(1140));
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1140px;
 }
