@@ -1,0 +1,125 @@
+.plans
+  font-size: 14px
+  line-height: 30px
+  background: linear-gradient(180deg, #f8f8f8 -45.04%, rgba(248, 248, 248, 0) 88.56%)
+  padding-top: 80px
+  margin-top: 126px
+  .container
+    .plans-text
+      h3
+        color: #0b132a
+        text-align: center
+        font-weight: 500
+        font-size: 35px
+        line-height: 50px
+        margin-bottom: 20px
+      p
+        max-width: 555px
+        margin: 0 auto
+        text-align: center
+        margin-bottom: 60px
+
+    .plans-list
+      display: flex
+      justify-content: space-between
+      .plan-item
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        border: 2px solid #dddddd
+        padding: 70px 67px
+        background: #ffffff
+        border-radius: 10px
+        &:hover
+          border: 2px solid #f53855
+        .wrapper
+          display: flex
+          flex-direction: column
+          align-items: center
+          .item-text
+            h3
+              color: #0b132a
+              text-align: center
+              font-size: 18px
+              font-weight: 500
+              line-height: 30px
+              margin-top: 20px
+              margin-bottom: 20px
+            ul
+              display: flex
+              flex-direction: column
+              li
+                display: flex
+                align-items: center
+                svg
+                  margin-right: 25px
+        .item-price
+          text-align: center
+          margin-top: 50px
+          h3
+            text-align: center
+            color: #0b132a
+            margin-bottom: 33px
+            font-weight: 500
+            font-size: 25px
+            line-height: 30px
+            span
+              color: #4f5665
+          .btn
+            color: #F53838
+            background-color: #ffffff
+            border: 2px solid #F53838
+            border-radius: 50px
+            font-size: 16px
+            font-weight: 700
+            line-height: 25px
+            padding: 13px 63px
+            &:hover
+              background-color: #F53838
+              color: #ffffff
+
+@media ( max-width: 1199px )
+  .plans
+    .container
+      .plans-list
+        justify-content: space-around
+        .plan-item
+          padding: 40px 37px
+
+@media ( max-width: 991px )
+  .plans
+    .container
+      .plans-list
+        flex-direction: column
+        align-items: center
+        .plan-item
+          width: 80%
+          padding: 20px 17px
+          &:not(:last-child)
+            margin-bottom: 15px
+          .wrapper
+            flex-direction: row
+            justify-content: space-around
+            width: 100%
+            .item-text
+              p
+                margin: 10px 0
+
+@media ( max-width: 600px )
+  .plans
+    margin-top: 80px
+    padding: 15px
+    .container
+      .plans-text
+        h3
+          font-size: 25px
+
+@media ( max-width: 490px )
+  .plans
+    .container
+      .plans-list
+        .plan-item
+          .wrapper
+            flex-direction: column
