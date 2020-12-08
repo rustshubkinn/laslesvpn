@@ -1,0 +1,107 @@
+footer
+  background: #f8f8f8
+  position: absolute
+  left: 0%
+  width: 100%
+  padding-bottom: 100px
+  padding-top: 200px
+  margin-top: -180px
+  z-index: -1
+  a
+    color: #4f5665
+    font-size: 16px
+    line-height: 30px
+    font-weight: 400
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    .social
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      p
+        max-width: 340px
+        margin: 30px 0
+        span
+          font-weight: 500
+      .social-buttons
+        li
+          a
+            display: flex
+            border-radius: 50%
+            box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08)
+            padding: 8px
+            &:hover
+              background-color: #f53838
+              svg
+                path
+                  fill: #ffffff
+            &:not(:last-child)
+              margin-right: 18px
+            svg
+              width: 20px
+              height: 20px
+              path
+                fill: #f53838
+      .copyright
+        color: #afb5c0
+
+    .social-links
+      display: flex
+      align-items: flex-start
+      ul
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+          margin-right: 126px
+        li
+          &:not(:last-child)
+            margin-bottom: 15px
+
+      p
+        color: #0b132a
+        font-weight: 500
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 20px
+
+@media ( max-width: 1199px )
+  footer
+    .container
+      .social
+        p
+          max-width: 200px
+      .social-links
+        ul
+          &:not(:last-child)
+            margin-right: 40px
+
+@media ( max-width: 767px )
+  footer
+    .container
+      flex-direction: column-reverse
+      .social
+        margin: 0 auto
+        margin-top: 60px
+      .social-links
+
+@media ( max-width: 600px )
+  footer
+    margin-top: -180px
+    padding-top: 180px
+    .social-links
+      padding: 0
+      ul
+        &:not(:last-child)
+          margin-right: 20px
+
+@media ( max-width: 575px )
+  footer
+    padding: 180px 32px
+    .container
+      .social-links
+        ul
+          &:not(:last-child)
+            margin-right: 20px
