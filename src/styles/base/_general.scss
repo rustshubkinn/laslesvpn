@@ -27,6 +27,19 @@ body {
   color: #4f5665;
 }
 
+.title-text {
+  color: #0b132a;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+@media (max-width: 600px) {
+  .title-text {
+    font-size: 25px;
+  }
+}
+
 .container {
   @include container();
   @include sm(max-width, rem(510));
