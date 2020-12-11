@@ -1,7 +1,10 @@
+include ../../components/rounded-button/rounded-button
+
 section(class="feedback")
   div(class="container")
-    h3(class="title-text") Trusted by Thousands of Happy Customers
-    p These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+    div(class="heading-wrapper")
+      h3(class="title-text") Trusted by Thousands of Happy Customers
+      p These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
     ul
       li
         div(class="user")
@@ -49,9 +52,7 @@ section(class="feedback")
         span
         span
       div(class="scroll-arrows")
-        span
-          include ../../../img/svg/arrow-left.svg
-        span 
-          include ../../../img/svg/arrow-left.svg
+        +rounded-button
+        +rounded-button
 
         

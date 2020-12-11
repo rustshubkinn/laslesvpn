@@ -1,34 +1,22 @@
-.feedback
+section.feedback
   margin-top: 125px
-  p
-    margin: 0
-  h3
-    margin: 0 auto
+  .heading-wrapper
     text-align: center
-    max-width: 448px
     margin-bottom: 20px
-  p
-    max-width: 555px
-    margin: 0 auto
-    text-align: center
   ul
-    align-items: center
-    justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 50px
     margin-top: 50px
     li
       display: flex
       flex-direction: column
-      justify-content: space-between
-      width: 100%
-      min-width: 340px
       border: 2px solid #dddddd
-      padding: 28px
+      padding: 5px 28px
       border-radius: 10px
       line-height: 25px
       &:hover
         border: 2px solid #f53838
-      &:not(:last-child)
-        margin-right: 50px
       .user
         display: flex
         align-items: center
@@ -41,7 +29,7 @@
           div
             p
               &:first-child
-                color: #0b132a
+                color: $title-color
                 font-weight: 500
                 font-size: 18px
               &:last-child
@@ -56,9 +44,7 @@
       .user-text
         p
           text-align: start
-          color: #0b132a
-          max-width: 340px
-          min-height: 100px
+          color: $title-color
           margin-top: 8px
 
   .scroll-line
@@ -89,32 +75,27 @@
       display: flex
       align-items: center
       justify-content: space-between
-      span
-        display: flex
-        border: 2px solid #f53838
-        border-radius: 50%
-        padding: 20px
+      .rounded-button
         &:last-child
           transform: matrix(-1, 0, 0, 1, 0, 0)
           margin-left: 20px
-        &:hover
-          background: #f53838
-          box-shadow: 0 14px 44px rgba(14, 20, 34, 0.08)
-          svg
-            path
-              fill: #ffffff
+
+@media ( max-width: 1199px )
+  section.feedback
+    ul
+      grid-template-columns: repeat(2, 1fr)
+      li:first-child
+        grid-row: 1/3
+
+@media ( max-width: 991px )
+  section.feedback
+    ul
+      grid-template-columns: repeat(1, 1fr)
+      li:first-child
+        grid-row: 1/2
 
 @media ( max-width: 575px )
-  .feedback
-    padding: 0 20px
-    ul
-      flex-direction: column
-      li
-        width: 70%
-        &:not(:last-child)
-          margin: 0
-          margin-bottom: 20px
-
+  section.feedback
     .scroll-line
       padding: 0 20px
       margin-top: 30px
@@ -130,7 +111,7 @@
             margin-bottom: 15px
       .scroll-arrows
         flex-direction: column
-        span
+        .rounded-button
           &:first-child
             transform: rotate(90deg)
             margin-bottom: 15px
@@ -139,19 +120,10 @@
             transform: rotate(-90deg)
 
 @media ( max-width: 450px )
-  .feedback
+  section.feedback
     ul
       li
-        min-width: 0
-        .user
-          .user-info
-            flex-direction: column
-            align-items: flex-start
-            img
-              margin-bottom: 15px
-        .user-rate
-          margin-bottom: 50px
-
+        padding: 10px
     .scroll-line
       .scroll-buttons
         span

@@ -1,47 +1,52 @@
-.features
-  display: flex
-  justify-content: space-between
-  line-height: 30px
-  margin-top: 95px
-  &-text
+section.features
+  .features-wrapper
     display: flex
-    flex-direction: column
-    margin-top: 60px
-    margin-left: 170px
-    h3
-      max-width: 383px
-    ul
+    justify-content: space-between
+    line-height: 30px
+    margin-top: 95px
+    .features-image
+      width: 80%
+    .features-text
+      display: flex
       flex-direction: column
-      li
-        display: flex
-        align-items: center
-        &:not(:last-child)
-          margin-bottom: 15px
+      margin-top: 60px
+      margin-left: 170px
+      h3
+        max-width: 383px
+      ul
+        flex-direction: column
+        li
+          display: flex
+          align-items: center
+          &:not(:last-child)
+            margin-bottom: 15px
 
-        svg
-          margin-right: 12px
-        p
-          font-size: 14px
-          font-weight: 400
-          line-height: 30px
+          svg
+            margin-right: 12px
+          p
+            font-size: 14px
+            font-weight: 400
+            line-height: 30px
+            margin: 0
 
 @media ( max-width: 991px )
-  .features
-    flex-direction: column
-    align-items: center
-    text-align: center
-    &-text
-      margin: 0 auto
-      margin-top: 30px
-      h3
+  section.features
+    .features-wrapper
+      flex-direction: column
+      align-items: center
+      text-align: center
+      .features-image
+        width: 100%
+      .features-text
         margin: 0 auto
-      ul
-        margin: 0 auto
+        margin-top: 30px
+        h3
+          margin: 0 auto
+        ul
+          margin: 0 auto
 
 @media ( max-width: 600px )
-  .features
-    margin-top: 60px
-    padding: 15px
-    &-image
-      img
-        width: 85%
+  section.features
+    .features-wrapper
+      margin-top: 60px
+      padding: 15px

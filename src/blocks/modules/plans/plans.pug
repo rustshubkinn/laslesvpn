@@ -1,3 +1,5 @@
+include ../../components/link-button/link-button
+
 section(class="plans")
   div(class="container")
     div(class="plans-text")
@@ -25,7 +27,7 @@ section(class="plans")
                 p Works on All Devices
         div(class="item-price")
           h3 Free 
-          a(class="btn" href="#") Select
+          +link-button('#', 'Select')
 
       li(class="plan-item")
         div(class="wrapper")
@@ -51,7 +53,7 @@ section(class="plans")
                 p Connect Anyware
         div(class="item-price")
           h3 $9 #[span / mo]
-          a(class="btn" href="#") Select
+          +link-button('#', 'Select')
 
       li(class="plan-item")
         div(class="wrapper")
@@ -80,4 +82,4 @@ section(class="plans")
                 p Get New Features
         div(class="item-price")
           h3 $12 #[span / mo]
-          a(class="btn" href="#") Select
+          +link-button('#', 'Select')
