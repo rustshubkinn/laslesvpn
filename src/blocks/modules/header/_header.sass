@@ -25,9 +25,7 @@ header
   header
     .nav-block
       flex-direction: column
-      align-items: center
       .logo-svg
-        margin-bottom: 20px
         p
           display: none
       .menu
@@ -35,6 +33,8 @@ header
 
 @media ( max-width: 768px )
   header
+    .nav-block
+      flex-direction: row
     .menu
       display: none
 
@@ -45,3 +45,6 @@ header
       font-size: 14px
     .nav-block
       align-items: center
+      .log-in
+        li:first-child
+          display: none

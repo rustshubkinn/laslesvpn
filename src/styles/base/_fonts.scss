@@ -8,5 +8,6 @@
   }
 }
 
-@include font("Rubik", Regular, 400, "../../fonts/Rubik-Regular.woff");
-@include font("Rubik", Medium, 500, "../../fonts/Rubik-Medium.woff");
+@include font("Rubik", normal, 400, "../../fonts/Rubik-Regular.woff2");
+@include font("Rubik", medium, 500, "../../fonts/Rubik-Medium.woff2");
+@include font("Rubik", bold, 700, "../../fonts/Rubik-Bold.woff2");
