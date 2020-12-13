@@ -1,10 +1,12 @@
+include ../../components/subscribe-button/subscribe-button
+
 section(class='get-started')
   div(class="container")
     div(class="get-started-wrapper")
       div(class='get-started-text')
         h3(class="title-text") Want anything to be easy with #[span LaslesVPN.]
         p Provide a network for all your needs with ease and fun using #[span LaslesVPN] discover interesting features from us.
-        a(class='red-btn' href='#') Get Started
+        +subscribe-button('#', 'Get Started')
       div(class='get-started-image')
         picture
           source(srcset="img/get-started-image.webp" type="image/webp")

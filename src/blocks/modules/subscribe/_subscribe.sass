@@ -3,7 +3,7 @@
   z-index: 1
   bottom: 0%
   left: 0%
-  .container
+  .subscribe-wrapper
     display: flex
     align-items: center
     justify-content: space-between
@@ -15,50 +15,34 @@
     .subscribe-text
       margin-left: 70px
       padding: 40px 0
-      h3
-        color: #0b132a
-        font-weight: 500
-        font-size: 35px
-        line-height: 45px
-        max-width: 371px
+      max-width: 35%
       p
         margin: 0
         margin-top: 20px
-    .subscribe-btn
-      color: #ffffff
-      background: #f53838
-      font-weight: 500
-      font-size: 16px
-      line-height: 25px
-      padding: 17.5px 66px
-      border-radius: 10px
+    .subscribe-button
       margin-right: 70px
-      &:hover
-        color: #f53838
-        background-color: #ffffff
-        border: 2px solid #f53838
 
 @media ( max-width: 991px )
   .subscribe
-    .container
+    .subscribe-wrapper
       flex-direction: column
       text-align: center
       .subscribe-text
+        max-width: 100%
         margin: 0
-      .subscribe-btn
+      .subscribe-button
         margin: 0
         margin-bottom: 20px
 
 @media ( max-width: 600px )
   .subscribe
     position: block
-    .container
+    .subscribe-wrapper
       margin: 30px auto
       padding: 15px
-      max-width: 70%
       .subscribe-text
         padding: 15px
         h3
           font-size: 25px
-      .subscribe-btn
+      .subscribe-button
         padding: 13.5px 50px

@@ -47,6 +47,25 @@ img {
   line-height: 50px;
 }
 
+.logo-svg {
+  max-height: 37px;
+  a {
+    display: flex;
+    align-items: center;
+    p {
+      color: $title-color;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0;
+      margin-left: 10px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .title-text {
     font-size: 25px;
