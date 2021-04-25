@@ -1,6 +1,6 @@
 # gulp-pug-starter
 
-[Live-Version](https://loving-meitner-5495e0.netlify.app/)
+[Live-Version](https://tender-lalande-56802e.netlify.app/)
 
 ![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-pug-starter.svg)
 [![dependencies Status](https://david-dm.org/andreyalexeich/gulp-pug-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-pug-starter)
