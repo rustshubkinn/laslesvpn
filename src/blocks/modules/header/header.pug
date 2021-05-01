@@ -1,9 +1,11 @@
 include ../../components/link-button/link-button
+include ../../components/burger-menu/burger-menu
 
 header
   div(class='container')
     nav
       ul(class='nav-block')
+        +burger-menu
         li(class='logo-svg')
           a(href="#")
             include ../../../img/svg/header-logo.svg
