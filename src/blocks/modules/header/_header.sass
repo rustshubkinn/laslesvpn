@@ -1,25 +1,44 @@
 header
-  .nav-block
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-top: 50px
-
-    .menu
-      li
-        &:not(:last-child)
-          margin-right: 40px
-        a
-          &:hover
-            color: #000000
-
-    .log-in
+  nav 
+    display: flex 
+    flex-direction: column
+    .nav-block
       display: flex
+      justify-content: space-between
       align-items: center
-      li:first-child
-        margin-right: 30px
-        color: $title-color
-        font-weight: 500
+      margin-top: 50px
+
+      .burger-wrapper
+        display: flex
+        .logo-svg
+          margin-left: 10px
+
+      .menu
+        li
+          &:not(:last-child)
+            margin-right: 40px
+          a
+            &:hover
+              color: #000000
+
+      .log-in
+        display: flex
+        align-items: center
+        li:first-child
+          margin-right: 30px
+          color: $title-color
+          font-weight: 500
+
+    .mobile-menu 
+      display: none
+      margin-top: 50px
+      li 
+        &:not(:first-child)
+          margin-top: 20px
+      a 
+        font-size: 23px
+    .burger-clicked
+      display: block
 
 @media ( max-width: 992px )
   header
@@ -41,10 +60,16 @@ header
 @media ( max-width: 576px )
   header
     padding: 0 20px
-    a
-      font-size: 14px
-    .nav-block
-      align-items: center
-      .log-in
-        li:first-child
-          display: none
+    nav 
+      a
+        font-size: 14px
+      .nav-block
+        align-items: center
+        li 
+          .log-in 
+            flex-direction: column-reverse
+            li 
+              &:first-child
+                margin: 0
+                margin-top: 15px
+              

@@ -5,11 +5,13 @@ header
   div(class='container')
     nav
       ul(class='nav-block')
-        +burger-menu
-        li(class='logo-svg')
-          a(href="#")
-            include ../../../img/svg/header-logo.svg
-            p Lasles#[span VPN]
+        li
+          div(class="burger-wrapper")
+            +burger-menu
+            div(class='logo-svg')
+              a(href="#")
+                include ../../../img/svg/header-logo.svg
+                p Lasles#[span VPN]
         li 
           ul(class='menu')
             li
@@ -28,4 +30,15 @@ header
               a(href='#') Sign In 
             li 
               +link-button('#', 'Sign Up')
+      ul(class="mobile-menu")
+        li
+          a(href='#') About 
+        li 
+          a(href='#') Features 
+        li 
+          a(href='#') Pricing 
+        li 
+          a(href='#') Testimonials 
+        li 
+          a(href='#') Help 
     
