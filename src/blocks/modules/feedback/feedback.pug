@@ -5,60 +5,49 @@ section(class="feedback")
     div(class="heading-wrapper")
       h3(class="title-text") Trusted by Thousands of Happy Customers
       p These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
-    ul
-      li
-        div(class="user")
-          div(class="user-info")
-            picture
-              source(srcset="img/person-1.webp" type="image/webp")
-              img(src="img/person-1.png", alt="User-Avatar")
-            div
-              p Viezh Robert
-              p Warsaw, Poland
-          div(class="user-rate")
-            p 4,5
-            include ../../../img/svg/star.svg
-        div(class="user-text")
-          p “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+    div(class="swiper-container mySwiper")
+      ul(class="swiper-wrapper")
+        li(class="swiper-slide")
+          div(class="user")
+            div(class="user-info")
+              picture
+                source(srcset="img/person-1.webp" type="image/webp")
+                img(src="img/person-1.png", alt="User-Avatar")
+              div
+                p Viezh Robert
+                p Warsaw, Poland
+            div(class="user-rate")
+              p 4,5
+              include ../../../img/svg/star.svg
+          div(class="user-text")
+            p “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
 
-      li
-        div(class="user")
-          div(class="user-info")
-            picture
-              source(srcset="img/person-2.webp" type="image/webp")
-              img(src="img/person-2.png", alt="User-Avatar")
-            div
-              p Yessica Christy
-              p Shanxi, China
-          div(class="user-rate")
-            p 4,5
-            include ../../../img/svg/star.svg
-        div(class="user-text")
-          p “I like it because I like to travel far and still can connect with high speed.”.
+        li(class="swiper-slide")
+          div(class="user")
+            div(class="user-info")
+              picture
+                source(srcset="img/person-2.webp" type="image/webp")
+                img(src="img/person-2.png", alt="User-Avatar")
+              div
+                p Yessica Christy
+                p Shanxi, China
+            div(class="user-rate")
+              p 4,5
+              include ../../../img/svg/star.svg
+          div(class="user-text")
+            p “I like it because I like to travel far and still can connect with high speed.”.
 
-      li
-        div(class="user")
-          div(class="user-info")
-            picture
-              source(srcset="img/person-3.webp" type="image/webp")
-              img(src="img/person-3.png", alt="User-Avatar")
-            div
-              p Kim Young Jou
-              p Seoul, South Korea
-          div(class="user-rate")
-            p 4,5
-            include ../../../img/svg/star.svg
-        div(class="user-text")
-          p “This is very unusual for my business that currently requires a virtual private network that has high security.”.
-        
-    div(class="scroll-line")
-      div(class="scroll-buttons")
-        span
-        span
-        span
-        span
-      div(class="scroll-arrows")
-        +rounded-button
-        +rounded-button
-
-        
+        li(class="swiper-slide")
+          div(class="user")
+            div(class="user-info")
+              picture
+                source(srcset="img/person-3.webp" type="image/webp")
+                img(src="img/person-3.png", alt="User-Avatar")
+              div
+                p Kim Young Jou
+                p Seoul, South Korea
+            div(class="user-rate")
+              p 4,5
+              include ../../../img/svg/star.svg
+          div(class="user-text")
+            p “This is very unusual for my business that currently requires a virtual private network that has high security.”.
