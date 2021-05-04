@@ -72,8 +72,8 @@
         "yargs": "~15.4.1"
     },
     "dependencies": {
-        "slick-carousel": "^1.8.1",
-        "smart-grid": "^2.1.2"
+        "smart-grid": "^2.1.2",
+        "swiper": "^6.5.9"
     },
     "husky": {
         "hooks": {
